@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressBean" class="com.cts.springcore.Address">
+        <constructor-arg name="city" value="Mumbai" />
+        <constructor-arg name="state" value="Maharashtra" />
+        <constructor-arg name="country" value="India" />
+    </bean>
+
+  
+    <bean id="studentBean" class="com.cts.springcore.Student">
+        <constructor-arg ref="addressBean" />
+        <property name="rollNumber" value="101" />
+        <property name="name" value="Aakash Sharma" />
+    </bean>
+
+</beans>

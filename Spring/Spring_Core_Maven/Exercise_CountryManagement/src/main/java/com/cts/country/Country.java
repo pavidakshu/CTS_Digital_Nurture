@@ -1,0 +1,64 @@
+package com.cts.country;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Country {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String countryName;
+    private String countryCode;
+    private String continent;
+
+    public Country() {
+    }
+
+    public Country(String countryName, String countryCode, String continent) {
+        this.countryName = countryName;
+        this.countryCode = countryCode;
+        this.continent = continent;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getCountryName() {
+        return countryName;
+    }
+
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
+
+    public String getContinent() {
+        return continent;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + countryName + " (" + countryCode + "), " + continent;
+    }
+}
