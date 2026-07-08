@@ -1,11 +1,12 @@
-package com.cts.handson.repository;
+package com.cts.resthandson;
 
-import com.cts.handson.entity.State;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.List;
+@SpringBootApplication
+public class SpringRestHandsonApplication {
 
-public interface StateRepository extends JpaRepository<State, Long> {
-
-    List<State> findByCountry_CountryCode(String countryCode);
+    public static void main(String[] args) {
+        SpringApplication.run(SpringRestHandsonApplication.class, args);
+    }
 }

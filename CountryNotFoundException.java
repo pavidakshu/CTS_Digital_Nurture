@@ -1,17 +1,56 @@
-# Records run_in_terminal and appmod-* tool calls as JSONL for the extension to process.
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-$raw = [Console]::In.ReadToEnd()
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/>
+    </parent>
 
-if ($raw -notmatch '"tool_name"\s*:\s*"([^"]+)"') { exit 0 }
-$toolName = $Matches[1]
+    <groupId>com.cts.resthandson</groupId>
+    <artifactId>spring-rest-handson</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
 
-if ($toolName -ne 'run_in_terminal' -and $toolName -notlike 'appmod-*') { exit 0 }
+    <properties>
+        <java.version>17</java.version>
+    </properties>
 
-if ($raw -notmatch '"session_id"\s*:\s*"([^"]+)"') { exit 0 }
-$sessionId = $Matches[1]
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-$hooksDir = '.github\modernize\java-upgrade\hooks'
-if (-not (Test-Path $hooksDir)) { New-Item -ItemType Directory -Path $hooksDir -Force | Out-Null }
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
 
-$line = ($raw -replace '[\r\n]+', ' ').Trim() + "`n"
-[System.IO.File]::AppendAllText("$hooksDir\$sessionId.json", $line, [System.Text.UTF8Encoding]::new($false))
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
