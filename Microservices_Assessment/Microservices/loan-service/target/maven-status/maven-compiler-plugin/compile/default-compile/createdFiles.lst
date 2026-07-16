@@ -1,0 +1,5 @@
+com\cts\loan\controller\LoanController.class
+com\cts\loan\LoanServiceApplication.class
+com\cts\loan\model\Loan.class
+com\cts\loan\repository\LoanRepository.class
+com\cts\loan\service\LoanService.class
