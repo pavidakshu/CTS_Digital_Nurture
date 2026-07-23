@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/styles.css"],
+  "sourcesContent": ["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #f5f5f5;\n  color: #333;\n}\n\nbutton {\n  cursor: pointer;\n}\n"],
+  "mappings": ";AAAA;AACE,cAAY;AACZ,UAAQ;AACR,WAAS;AACX;AAEA;AACE,eAAa,KAAK,EAAE;AACpB,oBAAkB;AAClB,SAAO;AACT;AAEA;AACE,UAAQ;AACV;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;66eb160bc2368934c6bc9037ea23913e11fec18887e09ed72b60165ec8cfd7fe;D:/files (1)/angular-hol/angular-hol/src/app/app.component.ts"],
+  "sourcesContent": ["\n    .header { background-color: #dd1b16; color: white; padding: 16px 24px; }\n    .header h1 { font-size: 20px; }\n    .main { display: flex; gap: 24px; padding: 24px; max-width: 1100px; margin: 0 auto; }\n    .form-panel { width: 320px; flex-shrink: 0; }\n    .list-panel { flex: 1; background: white; border-radius: 8px; border: 1px solid #eee; }\n    @media (max-width: 700px) {\n      .main { flex-direction: column; }\n      .form-panel { width: 100%; }\n    }\n  "],
+  "mappings": ";AACI,CAAC;AAAS,oBAAkB;AAAS,SAAO;AAAO,WAAS,KAAK;AAAM;AACvE,CADC,OACO;AAAK,aAAW;AAAM;AAC9B,CAAC;AAAO,WAAS;AAAM,OAAK;AAAM,WAAS;AAAM,aAAW;AAAQ,UAAQ,EAAE;AAAM;AACpF,CAAC;AAAa,SAAO;AAAO,eAAa;AAAG;AAC5C,CAAC;AAAa,QAAM;AAAG,cAAY;AAAO,iBAAe;AAAK,UAAQ,IAAI,MAAM;AAAM;AACtF,OAAO,CAAC,SAAS,EAAE;AACjB,GAJD;AAIS,oBAAgB;AAAQ;AAChC,GAJD;AAIe,WAAO;AAAM;AAC7B;",
+  "names": []
+}

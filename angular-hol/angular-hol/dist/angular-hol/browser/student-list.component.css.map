@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;05ee7459296b241fd5b60670b155c22c9d1451a5e5bb726d56194d92eb4e42b8;D:/files (1)/angular-hol/angular-hol/src/app/components/student-list.component.ts"],
+  "sourcesContent": ["\n    .list-container { padding: 20px; }\n    .summary { color: #666; margin-bottom: 16px; }\n    table { width: 100%; border-collapse: collapse; }\n    th, td { padding: 10px 14px; border-bottom: 1px solid #eee; text-align: left; }\n    th { background-color: #f5f5f5; font-weight: bold; }\n    .grade-a { color: #4caf50; font-weight: bold; }\n    .grade-b { color: #2196f3; font-weight: bold; }\n    .grade-c { color: #ff9800; font-weight: bold; }\n    .grade-f { color: #f44336; font-weight: bold; }\n    .btn-delete { padding: 5px 12px; background-color: #f44336; color: white; border: none; border-radius: 4px; cursor: pointer; }\n    .empty { color: #999; font-style: italic; }\n  "],
+  "mappings": ";AACI,CAAC;AAAiB,WAAS;AAAM;AACjC,CAAC;AAAU,SAAO;AAAM,iBAAe;AAAM;AAC7C;AAAQ,SAAO;AAAM,mBAAiB;AAAU;AAChD;AAAI;AAAK,WAAS,KAAK;AAAM,iBAAe,IAAI,MAAM;AAAM,cAAY;AAAM;AAC9E;AAAK,oBAAkB;AAAS,eAAa;AAAM;AACnD,CAAC;AAAU,SAAO;AAAS,eAAa;AAAM;AAC9C,CAAC;AAAU,SAAO;AAAS,eAAa;AAAM;AAC9C,CAAC;AAAU,SAAO;AAAS,eAAa;AAAM;AAC9C,CAAC;AAAU,SAAO;AAAS,eAAa;AAAM;AAC9C,CAAC;AAAa,WAAS,IAAI;AAAM,oBAAkB;AAAS,SAAO;AAAO,UAAQ;AAAM,iBAAe;AAAK,UAAQ;AAAS;AAC7H,CAAC;AAAQ,SAAO;AAAM,cAAY;AAAQ;",
+  "names": []
+}

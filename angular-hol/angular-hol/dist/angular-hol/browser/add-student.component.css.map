@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;964cfb6f22a6ba3796c7622fcc01ba5db8aaa7f8d8fbc59659a8d0cd9d722363;D:/files (1)/angular-hol/angular-hol/src/app/components/add-student.component.ts"],
+  "sourcesContent": ["\n    .form-container { padding: 20px; background: white; border-radius: 8px; }\n    h2 { margin-bottom: 16px; }\n    .form-group { margin-bottom: 12px; }\n    label { display: block; margin-bottom: 4px; font-weight: 500; }\n    input, select { width: 100%; padding: 9px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }\n    .btn-submit { width: 100%; padding: 11px; background-color: #4caf50; color: white; border: none; border-radius: 4px; font-size: 15px; margin-top: 8px; cursor: pointer; }\n    .btn-submit:disabled { background-color: #aaa; cursor: not-allowed; }\n  "],
+  "mappings": ";AACI,CAAC;AAAiB,WAAS;AAAM,cAAY;AAAO,iBAAe;AAAK;AACxE;AAAK,iBAAe;AAAM;AAC1B,CAAC;AAAa,iBAAe;AAAM;AACnC;AAAQ,WAAS;AAAO,iBAAe;AAAK,eAAa;AAAK;AAC9D;AAAO;AAAS,SAAO;AAAM,WAAS;AAAK,UAAQ,IAAI,MAAM;AAAM,iBAAe;AAAK,aAAW;AAAM;AACxG,CAAC;AAAa,SAAO;AAAM,WAAS;AAAM,oBAAkB;AAAS,SAAO;AAAO,UAAQ;AAAM,iBAAe;AAAK,aAAW;AAAM,cAAY;AAAK,UAAQ;AAAS;AACxK,CADC,UACU;AAAY,oBAAkB;AAAM,UAAQ;AAAa;",
+  "names": []
+}
